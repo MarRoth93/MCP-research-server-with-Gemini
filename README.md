@@ -68,6 +68,8 @@ uv run mcp_chatbot_gemini.py
 ```
 
 You’ll see output indicating that servers and tools are loading. Once complete, you can interact with the Gemini bot in the terminal.
+This chatbot calls Gemini using the `gemini-2.0-flash-exp` model by default.
+You can change the `model` parameter in `mcp_chatbot_gemini.py` to use any other Gemini model.
 
 ---
 ## Tools
