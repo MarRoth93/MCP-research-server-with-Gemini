@@ -28,8 +28,5 @@ To use the system, **you must update the following placeholders with your own lo
 3. **Inside Prompts**
    Look for any text that includes `'add path here'` and update it with your preferred local directory path.
 
-> 📝 Tip: Use absolute paths like `C:/Users/yourname/Documents/parsed` for best results.
+ Tip: Use absolute paths like `C:/Users/yourname/Documents/parsed` for best results.
 
----
-
-Let me know if you want a `.env`-based version instead.
