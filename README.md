@@ -89,12 +89,31 @@ To use the system, **you must update the following placeholders with your own lo
      "add path here"    // Path to your 'websites' folder
    ]
    ```
+Example paths:
+
+   ```json
+   "args": [
+     "-y",
+     "@modelcontextprotocol/server-filesystem",
+     "C:/ResearchData/parsed",
+     "C:/ResearchData/websites"
+   ]
+   ```
+   This assumes you have a `ResearchData` directory with `parsed` and `websites` subfolders.
+
 
 2. **`research_server.py`**
 
    ```python
    PAPER_TXT_DIR = Path("add path here")  # Set this to your parsed papers directory
    ```
+   Example:
+
+   ```python
+   PAPER_TXT_DIR = Path("C:/ResearchData/parsed")
+   ```
+   Make sure this matches the `parsed` folder path in your `server_config.json`.
+
 
 3. **Inside Prompts**
    Look for any text that includes `'add path here'` and update it with your preferred local directory path.
