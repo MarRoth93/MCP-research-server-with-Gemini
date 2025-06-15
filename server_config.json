@@ -6,8 +6,7 @@
             "args": [
                 "-y",
                 "@modelcontextprotocol/server-filesystem",
-                "G:\\Meine Ablage\\02_Marco\\Paper to read\\parsed",
-                "G:\\Meine Ablage\\02_Marco\\Paper to read\\websites"
+                "add path here"
             ]
         },
         
