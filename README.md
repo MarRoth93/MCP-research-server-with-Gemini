@@ -70,8 +70,38 @@ uv run mcp_chatbot_gemini.py
 You’ll see output indicating that servers and tools are loading. Once complete, you can interact with the Gemini bot in the terminal.
 
 ---
+## Tools
 
+The chatbot communicates with several MCP servers to provide various
+functions and prompts.
 
+### Servers
+
+- **filesystem** – exposes your `parsed` and `websites` folders so the bot can
+  read and write files.
+- **fetch** – simple HTTP fetch server for downloading content.
+- **research** – runs `research_server.py` and supplies the tools listed below.
+
+### Functions in `research_server.py`
+
+- `search_papers(topic, max_results=1, search_pool_size=50)` – search arXiv and
+  store paper metadata.
+- `extract_info(paper_id)` – return stored details about a paper.
+- `file_parsing(paper_id)` – convert a PDF to Markdown. This parse function
+  adds a prompt before the parsed output so Gemini knows how to summarise it.
+
+### Prompts
+
+- `extract_website(url, filename)` – fetch a web page and save a Markdown
+  snapshot.
+- `generate_search_prompt(topic, num_papers=5)` – guide Gemini to research a
+  topic using the above tools.
+
+### Resources
+
+- `papers://paper` – list parsed papers.
+- `papers://folder` – list available topics.
+- `papers://{topic}` – fetch papers for a specific topic.
 
 ## Path updates
 ### 🔧 Configuration Required: Add Your Local Paths
