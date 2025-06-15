@@ -50,10 +50,11 @@ This project uses [`uv`] — a fast Python package manager and virtual environme
 
 5. **Set your environment variables**
 
-   Make sure you have a `.env` file in the root of your project with the following content:
+   Copy the provided `.env.example` file to `.env` and update it with your API key:
 
-   ```
-   GEMINI_API_KEY=your_google_genai_key_here
+   ```bash
+   cp .env.example .env
+   # then edit .env and replace the placeholder with your key
    ```
 
 ---
