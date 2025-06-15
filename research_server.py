@@ -11,7 +11,7 @@ from mcp.types import Resource
 
 # --- Constants for directories ---
 PAPER_DIR = "papers"
-PAPER_TXT_DIR = Path("G:/Meine Ablage/02_Marco/Paper to read/parsed")
+PAPER_TXT_DIR = Path("add path here")
 PARSED_DIR = PAPER_TXT_DIR
 
 # Initialize FastMCP server
@@ -190,7 +190,7 @@ I will now paste the text of the research paper below.
 def extract_website(url: str, filename: str) -> str:
     """Fetch a web page and save a cleaned-up Markdown version to the
     'websites' folder inside my MCP filesystem root."""
-    return f"""fetch information from the website {url} and save itr as a md file in my directory 'G:\\Meine Ablage\\02_Marco\\Paper to read\\websites'. Name the file {filename}"""
+    return f"""fetch information from the website {url} and save it as a md file in my directory 'add path here'. Name the file {filename}"""
 
 
     
